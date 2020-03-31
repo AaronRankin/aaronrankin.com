@@ -1,0 +1,573 @@
+/* template */
+
+.logo {
+  height: 70px;
+  padding: 5px;
+}
+
+.bottom-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bottom-logo {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bottom-logo img {
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header */
+
+header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 2px solid #50C878
+}
+
+.spacer {
+  width: 100%;
+  height: 70px;
+}
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #CCCCCC;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav svg {
+  fill: #00AEEF;
+}
+
+svg:hover {
+  fill: #50C878;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #00AEEF;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #50C878;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*footer*/
+
+footer {
+  background: black;
+  text-align: center;
+  z-index: 2000;
+  width: 100%;
+  font-weight: 600;
+
+}
+
+
+
+.footer-logo {
+  color: #CCCCCC
+}
+
+.footer-nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.footer-nav-toggle:focus ~ .footer-nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #00AEEF;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+footer nav a {
+  color: white;
+}
+
+footer nav a:hover {
+  color: #00AEEF;
+}
+
+.footer-nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.footer-nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.copyright {
+  padding: 20px;
+}
+
+.wrapper {
+  background-color: #EEEEEE;
+  padding-top: 20px;
+}
+
+/* end template */
+
+.banner {
+  width: 100%;
+  background-color: #EEEEEE;
+  margin: 0;
+  padding: 0;
+}
+
+.banner img {
+  width: 100%;
+  position: relative;
+
+
+}
+
+.banner h1 {
+  width: 100%;
+  color: white;
+  font-size: 5vw;
+  position: absolute;
+  padding-left: 100px;
+  top: 10%;
+  bottom: 0;
+  left: 0
+  right: 0;
+}
+
+.page {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 50px -15px black;
+}
+
+.blog-index {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.blog-post {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.blog-pic {
+  width: 100%;
+  z-index: 1;
+}
+
+.blog-post img {
+  width: 100%;
+  z-index: 1;
+
+}
+
+.blog-preview {
+  max-width: 400px;
+  z-index: 2;
+  position: relative;
+  margin-top: -30px;
+
+
+}
+
+.blog-summary {
+  max-width: 95%;
+  padding: 20px;
+  color: white;
+  background-color: #00AEEF;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.blog-title h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+
+.blog-title p {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.blog-title {
+  margin: 0;
+}
+
+.blog-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.blog-title a:hover {
+  color: #50C878;
+}
+
+.break {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.blog-blurb p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+
+}
+
+.read-more {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.read-more p {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #00AEEF;
+}
+
+.read-more span {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #00AEEF;
+}
+
+.read-more span:hover {
+  background-color: #50C878;
+  transition: 300ms;
+  color: white;
+}
+
+.read-more a:hover {
+  color: white;
+  transition: 300ms;
+}
+
+.buffer {
+  width: 100%;
+  height: 40px;
+}
+
+.navigator {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
+.navigator-label span {
+  padding: 10px;
+  color: #00AEEF;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+.navigator-label a {
+  text-decoration: none;
+}
+
+.navigator-label svg {
+  fill: #00AEEF;
+  padding-bottom: 3px;
+}
+
+.navigator-label svg:hover {
+  fill: #50C878;
+
+}
+
+.navigator-label a span:hover {
+  color: #50C878;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+
+  /* template */
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    align: left;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 100px;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 70px;
+  }
+
+  nav {
+    // all: unset; /* this causes issues with Edge, since it's unsupported */
+
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+
+    grid-column: 3 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  /* footer*/
+
+  .footer-nav-toggle-label {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 50fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .footer-logo {
+    text-align: left;
+    padding-left: 100px;
+    margin: 0;
+
+
+  }
+
+  .copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
+  /* template */
+
+}
+
+@media screen and (max-width: 1200px){
+
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .banner h1 {
+    padding-left: 20px;
+  }
+
+  .blog-index {
+    flex-direction: column;
+
+  }
+
+  .blog-post {
+    max-width: 100%;
+  }
+
+  .blog-preview {
+    max-width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+}
