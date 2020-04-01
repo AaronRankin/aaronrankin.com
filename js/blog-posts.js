@@ -85,24 +85,24 @@ function postPreview(article) {
 }
 
 
-if (getElementById("page-one") = true) {
+if (getElementById("page-one")) {
   document.getElementById("page-one").innerHTML = `
   ${articleData.map(postPreview).slice(0, 3)}
   `;
 
-} else if (getElementById("page-two") = true) {
+} else if (getElementById("page-two")) {
 
   document.getElementById("page-two").innerHTML = `
   ${articleData.map(postPreview).slice(3, 6)}
   `;
 
-} else if (getElementById("page-three") = true) {
+} else if (getElementById("page-three")) {
 
   document.getElementById("page-three").innerHTML = `
   ${articleData.map(postPreview).slice(6, 9)}
   `;
 
-} else if (getElementById("page-four") = true) {
+} else if (getElementById("page-four")) {
 
   document.getElementById("page-four").innerHTML = `
   ${articleData.map(postPreview).slice(9, 12)}
