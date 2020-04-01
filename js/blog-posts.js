@@ -90,9 +90,9 @@ ${articleData.map(postPreview).slice(0, 3)}
 `;
 
 document.getElementById("page-two").innerHTML = `
-${articleData.map(postPreview).slice(3, 7)}
+${articleData.map(postPreview).slice(3, 6)}
 `;
 
 document.getElementById("page-three").innerHTML = `
-${articleData.map(postPreview).slice(7)}
+${articleData.map(postPreview).slice(6)}
 `;
