@@ -1,6 +1,6 @@
 export default {
 
-  const articleData: [
+  articleData: [
     {
       featuredImage: "https://aaronrankin.com/images/uk-lockdown.png",
       postTitle: "The Inevitable Lockdown Has Arrived But We Can Get Through This",
