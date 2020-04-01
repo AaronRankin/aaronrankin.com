@@ -1,5 +1,7 @@
 import articleData from 'https://aaronrankin.com/js/articleData.js'
 
+console.log(articleData.articleData)
+
 function postPreview(article) {
   return `
     <div class="blog-post">
