@@ -1,6 +1,6 @@
 export default {
 
-  articleData: [
+  const articleData: [
     {
       featuredImage: "https://aaronrankin.com/images/uk-lockdown.png",
       postTitle: "The Inevitable Lockdown Has Arrived But We Can Get Through This",
@@ -56,7 +56,7 @@ export default {
       postDate: "20th January 2020",
       postBlurb: "While the assembly members got to feel important denouncing the PM and “English Nationalism” the same problems that beset Northern Ireland, that they let fester for three years, remain.",
       postLink: "https://aaronrankin.com/ignore-the-united-front-in-belfast-its-all-for-show",
-    },
+    }
   ]
 
 }
