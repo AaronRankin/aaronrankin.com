@@ -57,6 +57,6 @@ export default {
       postBlurb: "While the assembly members got to feel important denouncing the PM and “English Nationalism” the same problems that beset Northern Ireland, that they let fester for three years, remain.",
       postLink: "https://aaronrankin.com/ignore-the-united-front-in-belfast-its-all-for-show",
     },
-  ];
+  ]
 
 }
