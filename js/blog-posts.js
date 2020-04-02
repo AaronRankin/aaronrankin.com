@@ -1,6 +1,5 @@
 import articleData from 'https://aaronrankin.com/js/articleData.js'
 
-const articleData = articleData
 
 function postPreview(article) {
   return `
