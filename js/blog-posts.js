@@ -32,7 +32,7 @@ function postPreview(article) {
 
 if (document.getElementById("page-one")) {
   document.getElementById("page-one").innerHTML = `
-  ${articleData.map(postPreview).slice(0, 3)}
+  ${[articleData].map(postPreview).slice(0, 3)}
   `;
 
 } else if (document.getElementById("page-two")) {
