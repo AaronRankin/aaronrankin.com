@@ -108,4 +108,40 @@ if (document.getElementById("page-one")) {
   ${articleData.map(postPreview).slice(9, 12)}
   `;
 
+} else if (document.getElementById("page-five")) {
+
+  document.getElementById("page-five").innerHTML = `
+  ${articleData.map(postPreview).slice(12, 15)}
+  `;
+
+} else if (document.getElementById("page-six")) {
+
+  document.getElementById("page-six").innerHTML = `
+  ${articleData.map(postPreview).slice(15, 18)}
+  `;
+
+} else if (document.getElementById("page-seven")) {
+
+  document.getElementById("page-seven").innerHTML = `
+  ${articleData.map(postPreview).slice(18, 21)}
+  `;
+
+} else if (document.getElementById("page-eight")) {
+
+  document.getElementById("page-eight").innerHTML = `
+  ${articleData.map(postPreview).slice(21, 24)}
+  `;
+
+} else if (document.getElementById("page-nine")) {
+
+  document.getElementById("page-nine").innerHTML = `
+  ${articleData.map(postPreview).slice(24, 27)}
+  `;
+
+} else if (document.getElementById("page-ten")) {
+
+  document.getElementById("page-ten").innerHTML = `
+  ${articleData.map(postPreview).slice(27, 30)}
+  `;
+
 }
