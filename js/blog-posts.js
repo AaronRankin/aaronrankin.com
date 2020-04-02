@@ -65,7 +65,7 @@ xhttp.onreadystatechange = function() {
       }
     }
 };
-xhttp.open("GET", "../js/articleData.json", true);
+xhttp.open("GET", "https://aaronrankin.com/js/articleData.json", true);
 xhttp.send()
 
 function postPreview(article) {
