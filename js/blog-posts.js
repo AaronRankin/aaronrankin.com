@@ -1,6 +1,6 @@
 import articleData from "https://aaronrankin.com/js/articleData.js";
 
-
+var archive = articleData
 
 function postPreview(article) {
   return `
@@ -32,7 +32,7 @@ function postPreview(article) {
 
 if (document.getElementById("page-one")) {
   document.getElementById("page-one").innerHTML = `
-  ${[articleData].map(postPreview).slice(0, 3)}
+  ${archive.map(postPreview).slice(0, 3)}
   `;
 
 } else if (document.getElementById("page-two")) {
