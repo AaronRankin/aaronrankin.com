@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Sans Serif;
+  overflow-x: hidden;
+}
+
+/* navigation styles start here */
+
+.spacer {
+  height: 80px;
+  background-color: transparent;
+}
+
+header {
+  background: transparent;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  font-weight: 700;
+  animation: fadeIn 2.5s ease-in;
+}
+
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav svg {
+  fill: #2D6294;
+}
+
+svg:hover {
+  fill: white;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #2D6294;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+nav span:hover {
+  color: white;
+  background-color: #2D6294;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  transition: 500ms;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*footer*/
+
+footer {
+  background: black;
+  text-align: center;
+  z-index: 2000;
+  width: 100%;
+  font-weight: 600;
+
+}
+
+.footer-logo {
+  color: #CCCCCC
+}
+
+.footer-nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.footer-nav-toggle:focus ~ .footer-nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #2D6294;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+footer nav a {
+  color: white;
+}
+
+footer nav span:hover {
+  color: white;
+  background-color: #2D6294;
+}
+
+.footer-nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.footer-nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.copyright {
+  padding: 20px;
+}
+
+/* End Template */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #2D6294;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+
+}
+
+.wrapper::before {
+  width: 45%;
+  height: 100vh;
+  background: white;
+  content: '';
+  position: absolute;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  animation-name: entrance;
+  animation-duration: 2s;
+  animation-timing-finction: ease-in;
+
+}
+
+@keyframes entrance {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.name-letters {
+  max-width: 50%;
+  background-color: transparent;
+  padding: 6vw;
+  animation: fadeIn 2.5s ease-in;
+}
+
+.name-letters img {
+  width: 100%;
+  animation: fadeIn 2.5s ease-in;
+}
+
+.name-words {
+  max-width: 50%;
+  font-size: 3.5vw;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 6vw;
+  color: #2D6294;
+  animation: fadeIn 2.5s ease-in;
+}
+
+.name-words h1 {
+  width: 100%;
+  background-color: transparent;
+  animation: fadeIn 2.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    align: left;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 100px;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 70px;
+  }
+
+  nav {
+    // all: unset; /* this causes issues with Edge, since it's unsupported */
+
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+
+    grid-column: 3 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  nav li {
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  /* footer*/
+
+  .footer-nav-toggle-label {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 50fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .footer-logo {
+    text-align: left;
+    padding-left: 100px;
+    margin: 0;
+
+
+  }
+
+  .copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  nav li a {
+    color: white;
+  }
+
+  nav svg {
+
+    fill: white;
+  }
+
+  .social-links li {
+    display: inline;
+
+  }
+
+  nav span:hover {
+    padding: 0;
+    border-radius: 0;
+    background-color: none;
+  }
+
+}
