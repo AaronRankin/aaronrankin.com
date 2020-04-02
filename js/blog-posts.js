@@ -1,4 +1,5 @@
-import articleData from 'https://aaronrankin.com/js/articleData.js'
+import articleData from "https://aaronrankin.com/js/articleData.js";
+
 
 
 function postPreview(article) {
