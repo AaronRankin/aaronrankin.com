@@ -237,10 +237,10 @@ footer nav span:hover {
   bottom: 0;
   right: 0;
   z-index: -1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
   animation-name: entrance;
   animation-duration: 2s;
-  animation-timing-finction: ease-in;
+  animation-timing-function: ease-in;
 
 }
 
