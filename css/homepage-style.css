@@ -639,13 +639,37 @@ footer nav a:hover {
 
 @media screen and (max-width: 500px) {
 
-
-
+  .portrait {
+    height: 88vw;
+    object-fit: cover;
+    object-position: 65% 35%;
+  }
 
   .banner .title {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 550%;
+    bottom: 0;
     padding-left: 20px;
   }
 
+  .title p {
+    font-size: 3.6vw;
+  }
+
+  .name {
+    font-size: 6vw;
+  }
+
+  .banner .blog-button {
+    top: 740% !important;
+  }
+
+  .blog-button {
+    font-size: 5vw;
+  }
 
   h2 {
 
