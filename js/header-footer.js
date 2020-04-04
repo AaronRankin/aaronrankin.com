@@ -1,5 +1,7 @@
 document.getElementById("header").innerHTML = `
+  <a href="https://aaronrankin.com">
   <img class="logo" src="https://aaronrankin.com/images/aaron-rankin-logo.png">
+  </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
     <ul>
