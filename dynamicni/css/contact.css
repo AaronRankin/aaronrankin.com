@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Sans Serif;
+  overflow-x: hidden;
+}
+
+/* navigation styles start here */
+
+.spacer {
+  height: 80px;
+  background-color: transparent;
+}
+
+header {
+  background: transparent;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  top: 0;
+  font-weight: 700;
+  transition: top 300ms;
+}
+
+
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #2D6294;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav svg {
+  fill: #2D6294;
+}
+
+svg:hover {
+  fill: white;
+}
+
+nav {
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  left: 0;
+  background: #2D6294;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-right: 20px;
+
+}
+
+nav a {
+  color: #2D6294;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+nav span:hover {
+  color: white;
+  background-color: #2D6294;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  transition: 500ms;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+  color: #2D6294;
+
+}
+
+.nav-toggle:checked ~ nav ul {
+  background-color: white;
+  border-bottom: 2px solid #2D6294;
+}
+
+.nav-toggle:checked ~ nav li {
+  border-bottom: 2px solid #2D6294;
+}
+
+.social-links li {
+  border: none !important;
+}
+
+
+/*footer*/
+
+footer h1 {
+  font-family: Cormorant Garamond;
+  font-weight: 700;
+  color: #2D6294;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 20px;
+}
+
+
+
+
+.top-band {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 15vw
+}
+
+.top-band svg {
+  width: 60%;
+  transform: rotate(90deg);
+  fill: #2D6294;;
+}
+
+.logo-letters{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 17vw;
+  padding: 2vw;
+
+}
+
+.logo-letters img {
+  width: 100%
+}
+
+.logo-name {
+  background-color: transparent;
+  position: absolute;
+  top: 8vw;
+  left: 0;
+  bottom:0;
+  padding: 10px 10px 10px 10px;
+}
+
+.logo-name h3 {
+  font-family: Cormorant Garamond;
+  font-weight: 700;
+  color: white;
+}
+
+.main {
+  font-size: 4.5vw;
+}
+
+.secondary {
+  font-size: 2vw;
+}
+
+/* End Template */
+
+.page {
+  max-width: 1000px;
+  font-family: Cormorant Garamond;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2D6294;
+}
+
+.page h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.break {
+  height: 400px;
+  max-height: 600px;
+  width: 3px;
+  background-color: #A9A9A9;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px;
+}
+
+.contact-pic {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.contact-pic img {
+  width: 100%;
+}
+
+.contact-info {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 32px;
+
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .logo {
+    align: left;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 100px;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 70px;
+  }
+
+  nav {
+    // all: unset; /* this causes issues with Edge, since it's unsupported */
+
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+
+    grid-column: 3 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  nav li {
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  /* footer*/
+
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  nav li a {
+    color: #2D6294;
+  }
+
+  nav svg {
+
+    fill: #2D6294;
+  }
+
+  .social-links li {
+    display: inline;
+
+  }
+
+  nav span:hover {
+    color: #2D6294;
+    background-color: white;
+    padding: 0;
+    border-radius: 0;
+    transition: 0;
+  }
+
+  nav svg:hover{
+    fill:#2D6294;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .page {
+    padding: 20px;
+  }
+
+  .page h1 {
+    font-size: 12vw;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .contact-pic {
+    display: none;
+  }
+
+  .name {
+    font-size: 8vw;
+  }
+
+}
