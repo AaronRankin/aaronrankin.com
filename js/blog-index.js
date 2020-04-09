@@ -32,8 +32,6 @@ xhttp.onreadystatechange = function() {
 
         };
 
-        document.documentURI = "https://aaronrankin.com/blog";
-
       };
 
       backButton.addEventListener("click",pageDown);
@@ -51,8 +49,6 @@ xhttp.onreadystatechange = function() {
         if (b <= response.articleData.length) {
           olderEntries.style.visibility = "visible";
         }
-
-        document.documentURI = "https://aaronrankin.com/blog";
 
       };
 
