@@ -34,7 +34,7 @@ xhttp.onreadystatechange = function() {
 
         $(document).ready(function() {
             // get the anchor link buttons
-            const menuBtn = $(nextButton);
+            const menuBtn = $("nextButton");
               // when each button is clicked
             menuBtn.click(()=>{
               // set a short timeout before taking action
@@ -49,7 +49,7 @@ xhttp.onreadystatechange = function() {
           history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
         }
 
-      });
+      };
 
       backButton.addEventListener("click",pageDown);
 
