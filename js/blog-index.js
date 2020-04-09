@@ -32,12 +32,6 @@ xhttp.onreadystatechange = function() {
 
         };
 
-        if (window.history.pushState) {
-            window.history.pushState('', '/', window.location.pathname)
-        } else {
-            window.location.hash = '/blog/';
-        }
-
       };
 
       backButton.addEventListener("click",pageDown);
@@ -56,11 +50,6 @@ xhttp.onreadystatechange = function() {
           olderEntries.style.visibility = "visible";
         }
 
-        if (window.history.pushState) {
-            window.history.pushState('', '/', window.location.pathname)
-        } else {
-            window.location.hash = '/blog/';
-        }
       };
 
       if (b <= 3) {
@@ -98,4 +87,10 @@ function postPreview(article) {
     </div>
   `;
 
+}
+
+if (window.history.pushState) {
+    window.history.pushState('', '/', window.location.pathname)
+} else {
+    window.location.hash = '/blog';
 }
