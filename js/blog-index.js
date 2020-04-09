@@ -32,7 +32,11 @@ xhttp.onreadystatechange = function() {
 
         };
 
-        history.replaceState({}, document.title, '/blog');
+        if (window.history.pushState) {
+            window.history.pushState('', '/', window.location.pathname)
+        } else {
+            window.location.hash = '/blog/';
+        }
 
       };
 
@@ -52,7 +56,11 @@ xhttp.onreadystatechange = function() {
           olderEntries.style.visibility = "visible";
         }
 
-        history.replaceState({}, document.title, '/blog');
+        if (window.history.pushState) {
+            window.history.pushState('', '/', window.location.pathname)
+        } else {
+            window.location.hash = '/blog/';
+        }
       };
 
       if (b <= 3) {
