@@ -585,6 +585,11 @@ footer nav a:hover {
     display: none;
   }
 
+  .navigator-label svg:hover {
+    fill: #00AEEF;
+
+  }
+
 
 }
 
