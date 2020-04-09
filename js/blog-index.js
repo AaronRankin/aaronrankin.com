@@ -32,6 +32,8 @@ xhttp.onreadystatechange = function() {
 
         };
 
+        history.replaceState({}, document.title, '/blog');
+
       };
 
       backButton.addEventListener("click",pageDown);
@@ -49,6 +51,8 @@ xhttp.onreadystatechange = function() {
         if (b <= response.articleData.length) {
           olderEntries.style.visibility = "visible";
         }
+
+        history.replaceState({}, document.title, '/blog');
       };
 
       if (b <= 3) {
