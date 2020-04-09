@@ -32,6 +32,10 @@ xhttp.onreadystatechange = function() {
 
         };
 
+        function removeHash(){
+          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        }
+
       };
 
       backButton.addEventListener("click",pageDown);
@@ -48,6 +52,10 @@ xhttp.onreadystatechange = function() {
 
         if (b <= response.articleData.length) {
           olderEntries.style.visibility = "visible";
+        }
+
+        function removeHash(){
+          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
         }
 
       };
