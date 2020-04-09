@@ -50,10 +50,6 @@ xhttp.onreadystatechange = function() {
           olderEntries.style.visibility = "visible";
         }
 
-        function removeHash(){
-          history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-        }
-
       };
 
       if (b <= 3) {
