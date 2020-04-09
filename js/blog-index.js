@@ -88,3 +88,9 @@ function postPreview(article) {
   `;
 
 }
+
+if(window.history.pushState) {
+    window.history.pushState('', '/', window.location.pathname)
+} else {
+    window.location.hash = '';
+}
