@@ -32,6 +32,21 @@ xhttp.onreadystatechange = function() {
 
         };
 
+        function removeLocationHash(){
+            var noHashURL = window.location.href.replace(/#.*$/, '');
+            window.history.replaceState('', document.title, noHashURL)
+        }
+        window.addEventListener("popstate", function(event){
+            removeLocationHash();
+        });
+        window.addEventListener("hashchange", function(event){
+            event.preventDefault();
+            removeLocationHash();
+        });
+        window.addEventListener("load", function(){
+            removeLocationHash();
+        });
+
       };
 
       backButton.addEventListener("click",pageDown);
@@ -88,18 +103,3 @@ function postPreview(article) {
   `;
 
 }
-
-function removeLocationHash(){
-    var noHashURL = window.location.href.replace(/#.*$/, '');
-    window.history.replaceState('', document.title, noHashURL)
-}
-window.addEventListener("popstate", function(event){
-    removeLocationHash();
-});
-window.addEventListener("hashchange", function(event){
-    event.preventDefault();
-    removeLocationHash();
-});
-window.addEventListener("load", function(){
-    removeLocationHash();
-});
