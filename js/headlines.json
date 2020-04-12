@@ -1,0 +1,59 @@
+{
+  "articleData": [
+    {
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Freddie Starr Ate My Hamster",
+      "postDate": "12th March 1986",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://i.imgur.com/N7XA6Xz.png"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Bin Bagged",
+      "postDate": "3rd May 2011",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://i.pinimg.com/originals/9f/c1/74/9fc17465785ba064f775d1d1cf1014f4.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Stick It Up Your Junta",
+      "postDate": "20th April 1982",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://i.pinimg.com/originals/b6/57/5f/b6575fa3bd60b5ba89daa5c0ee37a007.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Girl Eats 4000 Washing-Up Sponges",
+      "postDate": "29th February 2012",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://drdavidclarke.files.wordpress.com/2012/02/sunpg1.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Zip Me Up Before You Go Go",
+      "postDate": "9th April 1996",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://i.pinimg.com/originals/5e/7d/37/5e7d37e7fa69e230d24d5429baff034b.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Werewolf Seized In Southend",
+      "postDate": "24th July 1987",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://slappedham.com/wp-content/uploads/2019/10/Southend-Werewolf-Newspaper.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Are Our Judges On Drugs",
+      "postDate": "30th March 2011",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://www.lazerhorse.org/wp-content/uploads/2014/05/The-Sun-Stupid-Headlines-Judges-on-Drugs.jpg"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "Up Yours Delors",
+      "postDate": "1st November 1990",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://www.thesun.co.uk/wp-content/uploads/2016/03/2545571.main_image.jpg?strip=all"
+    },{
+      "featuredImage": "https://unsplash.it/1200/628/",
+      "postTitle": "UFO Hits Wind Turbine",
+      "postDate": "8th January 2009",
+      "postBlurb": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "postLink": "https://improbable.com/wp-content/uploads/2009/07/flyingcow.jpg"
+    }
+  ]
+}
