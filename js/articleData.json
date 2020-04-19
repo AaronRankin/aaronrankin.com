@@ -1,6 +1,12 @@
 {
   "articleData": [
     {
+      "featuredImage": "https://aaronrankin.com/images/lockdown-coding.png",
+      "postTitle": "How I Accidentally Wound Up Making The Most Of The Lockdown",
+      "postDate": "19th April 2020",
+      "postBlurb": "By nothing more than pure serendipity I wound up having to get my head around the intricacies of HTML to solve a particular problem I faced and it has since snowballed into an obsession about all things code related.",
+      "postLink": "https://aaronrankin.com/how-i-accidentally-wound-up-making-the-most-of-the-lockdown"
+    },{
       "featuredImage": "https://aaronrankin.com/images/picard-review.png",
       "postTitle": "Is Picard A Return To Form For Star Trek On TV?",
       "postDate": "8th April 2020",
